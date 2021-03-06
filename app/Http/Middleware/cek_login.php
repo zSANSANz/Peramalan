@@ -17,7 +17,7 @@ class cek_login
     public function handle($request, Closure $next)
     {
         if(Session::get('login_status')!=true) {
-            return redirect('Login');    
+            return redirect('login');    
         }
         return $next($request);
     }
