@@ -66,7 +66,7 @@
                             <a class="nav-link" href="{{ url('/permintaan') }}">Permintaan</a>
                             <a class="nav-link" href="{{ url('/logout') }}">Logout</a>
                         </li>
-                        <?php } else if (Session::get('hak_akses') == "petugas") { ?>
+                        <?php } else if (Session::get('hak_akses') == "pmi") { ?>
                             <li class="nav-item">
                             <a class="nav-link" href="{{ url('/donor') }}">Donor</a>
                             <a class="nav-link" href="{{ url('/kantong-darah') }}">Kantong Darah</a>
@@ -75,7 +75,7 @@
                         </li>
                             <!-- if admin -->
                         <?php } ?>
-                        <!-- not admin -->
+                        <!-- pendonor -->
                         <li class="nav-item">
                             <a class="nav-link" href="{{ url('/donor') }}">Donor</a>
                             <a class="nav-link" href="{{ url('Logout') }}">Logout</a>
